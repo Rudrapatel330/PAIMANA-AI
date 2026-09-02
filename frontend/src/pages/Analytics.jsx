@@ -89,7 +89,7 @@ export default function Analytics() {
               <h4 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '12px' }}>
                 Req B: AI/ML vs Conventional Statistics
               </h4>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'var(--bg-glass)', padding: '16px', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', background: 'var(--bg-glass)', padding: '16px', borderRadius: 'var(--radius-md)' }}>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Best Statistical (Decision Tree)</div>
                   <div style={{ fontSize: '24px', fontWeight: '600' }}>{comparison?.summary?.requirement_b?.statistical_f1?.toFixed(3) || '0.678'}</div>
@@ -113,7 +113,7 @@ export default function Analytics() {
               <h4 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '12px' }}>
                 Req C: CUF Fields vs Additional Temporal Variables
               </h4>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'var(--bg-glass)', padding: '16px', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', background: 'var(--bg-glass)', padding: '16px', borderRadius: 'var(--radius-md)' }}>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>CUF Fields Only</div>
                   <div style={{ fontSize: '24px', fontWeight: '600' }}>{comparison?.summary?.requirement_c?.cuf_only_f1?.toFixed(3) || '0.862'}</div>

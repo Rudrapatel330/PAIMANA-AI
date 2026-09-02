@@ -75,7 +75,7 @@ export default function Alerts() {
         </select>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '24px', alignItems: 'start' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', gap: '24px', alignItems: 'start' }}>
         <div>
           <div className="card" style={{ minHeight: '520px' }}>
             <div className="card-header">

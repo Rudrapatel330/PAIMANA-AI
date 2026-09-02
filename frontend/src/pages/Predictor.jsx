@@ -265,7 +265,7 @@ Please give me a deep analysis of this project and what actions should be taken.
         </button>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: result ? '1fr 1fr' : '1fr', gap: '28px', alignItems: 'start' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: result ? 'repeat(auto-fit, minmax(350px, 1fr))' : '1fr', gap: '28px', alignItems: 'start' }}>
         {/* INPUT FORM */}
         <div className="card">
           <div className="card-header">
@@ -277,7 +277,7 @@ Please give me a deep analysis of this project and what actions should be taken.
 
           <form onSubmit={handleSubmit}>
             {/* Categorical Fields */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px', marginBottom: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '20px' }}>
               <div>
                 <label style={labelStyle}>Ministry / Department</label>
                 <select className="filter-select" style={{ width: '100%' }} value={form.ministry} onChange={e => handleChange('ministry', e.target.value)}>
@@ -305,7 +305,7 @@ Please give me a deep analysis of this project and what actions should be taken.
             <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.6px', fontWeight: '700', marginBottom: '10px', marginTop: '8px' }}>
               Financial Parameters
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px', marginBottom: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '20px' }}>
               <div>
                 <label style={labelStyle}>Original Cost (₹ Cr)</label>
                 <input type="number" step="0.01" placeholder="e.g. 1200" className="search-input" style={{ width: '100%', paddingLeft: '14px' }}
@@ -327,7 +327,7 @@ Please give me a deep analysis of this project and what actions should be taken.
             <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.6px', fontWeight: '700', marginBottom: '10px' }}>
               Progress &amp; Timeline
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px', marginBottom: '28px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '28px' }}>
               <div>
                 <label style={labelStyle}>Physical Progress (%)</label>
                 <input type="number" step="0.1" min="0" max="100" placeholder="e.g. 45" className="search-input" style={{ width: '100%', paddingLeft: '14px' }}
