@@ -838,10 +838,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: flex;
-  }
-
   .sidebar {
     transform: translateX(-100%);
   }
@@ -855,7 +851,6 @@ body {
     margin-left: 0;
     padding: 20px;
     padding-top: 76px;
-    width: 100%;
   }
   
   .stats-grid {

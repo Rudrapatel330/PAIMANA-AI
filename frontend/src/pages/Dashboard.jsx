@@ -215,7 +215,7 @@ export default function Dashboard() {
   }, [])
 
   if (loading) return <div className="loading"><div className="loading-spinner"></div> Loading dashboard...</div>
-  if (!summary) return <div className="loading">Unable to load dashboard data. Please check if the API is running.</div>
+  if (!summary) return <div className="loading">Unable to connect to API. Make sure backend is running on port 8000.</div>
 
   return (
     <div>
