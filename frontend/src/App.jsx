@@ -22,30 +22,10 @@ const navItems = [
 function PageWrapper({ children }) {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        x: -36,
-        scaleX: 0.96,
-        filter: 'blur(5px)',
-        transformOrigin: '0% 0%'
-      }}
-      animate={{
-        opacity: 1,
-        x: 0,
-        scaleX: 1,
-        filter: 'blur(0px)',
-        transformOrigin: '0% 0%'
-      }}
-      exit={{
-        opacity: 0,
-        x: 20,
-        filter: 'blur(3px)',
-        transformOrigin: '0% 0%'
-      }}
-      transition={{
-        duration: 0.32,
-        ease: [0.16, 1, 0.3, 1] // Fluid spring ease-out
-      }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -12 }}
+      transition={{ duration: 0.2, ease: 'easeOut' }}
       style={{ width: '100%' }}
     >
       {children}
