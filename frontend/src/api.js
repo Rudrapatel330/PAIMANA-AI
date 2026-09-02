@@ -1,6 +1,6 @@
 const API_BASE = window.location.hostname === 'localhost' 
   ? 'http://localhost:8000/api' 
-  : '/api'
+  : `${window.location.origin}/api`
 
 async function fetchAPI(endpoint, params = {}) {
   const url = new URL(`${API_BASE}${endpoint}`)
