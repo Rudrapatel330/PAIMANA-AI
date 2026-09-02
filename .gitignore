@@ -1,0 +1,35 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment secrets (keep .env.example, NOT .env)
+.env
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Raw dataset (large, not needed at runtime)
+Dataset/
+
+# NOTE: Do NOT add backend/ml/models or backend/ml/results to gitignore
+# Those files are required for the app to run

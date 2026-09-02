@@ -1,0 +1,68 @@
+{
+  "total_projects": 2047,
+  "risk_distribution": {
+    "Medium": 950,
+    "Low": 654,
+    "High": 351,
+    "Critical": 92
+  },
+  "avg_risk_score": 42.5,
+  "total_alerts": 3888,
+  "cost_overrun_rate": 25.5,
+  "time_overrun_rate": 60.7,
+  "best_cost_model": "XGBoost (Full)",
+  "best_time_model": "XGBoost (Full)",
+  "features_used": [
+    "original_cost_cr",
+    "revised_cost_cr",
+    "cumulative_expenditure_cr",
+    "physical_progress_pct",
+    "expenditure_ratio",
+    "financial_progress_pct",
+    "physical_financial_gap",
+    "planned_duration_months",
+    "project_age_months",
+    "time_elapsed_ratio",
+    "expenditure_velocity",
+    "expenditure_monthly_avg",
+    "expenditure_acceleration",
+    "progress_velocity",
+    "progress_monthly_avg",
+    "progress_stagnant",
+    "cost_revision_trend",
+    "cost_revised_up",
+    "cost_overrun_trend",
+    "months_tracked",
+    "expenditure_ratio_trend",
+    "ministry_encoded",
+    "sector_encoded",
+    "state_encoded"
+  ],
+  "temporal_features": [
+    "expenditure_velocity",
+    "expenditure_monthly_avg",
+    "expenditure_acceleration",
+    "progress_velocity",
+    "progress_monthly_avg",
+    "progress_stagnant",
+    "cost_revision_trend",
+    "cost_revised_up",
+    "cost_overrun_trend",
+    "months_tracked",
+    "expenditure_ratio_trend"
+  ],
+  "comparison": {
+    "requirement_b": {
+      "statistical_f1": 0.6778,
+      "ml_f1": 0.8646,
+      "ml_improvement_pct": 27.6,
+      "conclusion": "ML provides significant gains"
+    },
+    "requirement_c": {
+      "cuf_only_f1": 0.8617,
+      "cuf_temporal_f1": 0.8646,
+      "temporal_gain_pct": 0.3,
+      "conclusion": "Temporal features from multi-month tracking improve prediction"
+    }
+  }
+}

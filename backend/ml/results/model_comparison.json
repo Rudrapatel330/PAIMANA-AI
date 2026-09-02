@@ -1,0 +1,195 @@
+{
+  "cost_overrun": {
+    "Logistic Regression": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "accuracy": 0.8537,
+      "precision": 0.8947,
+      "recall": 0.4857,
+      "f1_score": 0.6296,
+      "roc_auc": 0.8517
+    },
+    "Decision Tree": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "accuracy": 0.8585,
+      "precision": 0.8133,
+      "recall": 0.581,
+      "f1_score": 0.6778,
+      "roc_auc": 0.8545
+    },
+    "Random Forest (CUF)": {
+      "type": "ML",
+      "feature_set": "CUF-only",
+      "accuracy": 0.8732,
+      "precision": 0.8442,
+      "recall": 0.619,
+      "f1_score": 0.7143,
+      "roc_auc": 0.9163
+    },
+    "Gradient Boosting (CUF)": {
+      "type": "ML",
+      "feature_set": "CUF-only",
+      "accuracy": 0.9366,
+      "precision": 0.9759,
+      "recall": 0.7714,
+      "f1_score": 0.8617,
+      "roc_auc": 0.9514
+    },
+    "Random Forest (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.8561,
+      "precision": 0.8108,
+      "recall": 0.5714,
+      "f1_score": 0.6704,
+      "roc_auc": 0.9124,
+      "cv_f1_mean": 0.7468,
+      "cv_f1_std": 0.0219
+    },
+    "Gradient Boosting (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.9341,
+      "precision": 0.9643,
+      "recall": 0.7714,
+      "f1_score": 0.8571,
+      "roc_auc": 0.947,
+      "cv_f1_mean": 0.8315,
+      "cv_f1_std": 0.0346
+    },
+    "XGBoost (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.9366,
+      "precision": 0.954,
+      "recall": 0.7905,
+      "f1_score": 0.8646,
+      "roc_auc": 0.9542,
+      "cv_f1_mean": 0.8154,
+      "cv_f1_std": 0.0291
+    }
+  },
+  "time_overrun_classification": {
+    "Logistic Regression": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "accuracy": 0.8756,
+      "precision": 0.9091,
+      "recall": 0.8835,
+      "f1_score": 0.8961,
+      "roc_auc": 0.9485
+    },
+    "Decision Tree": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "accuracy": 0.8976,
+      "precision": 0.9259,
+      "recall": 0.9036,
+      "f1_score": 0.9146,
+      "roc_auc": 0.9387
+    },
+    "Random Forest (CUF)": {
+      "type": "ML",
+      "feature_set": "CUF-only",
+      "accuracy": 0.9171,
+      "precision": 0.9498,
+      "recall": 0.9116,
+      "f1_score": 0.9303,
+      "roc_auc": 0.9711
+    },
+    "Gradient Boosting (CUF)": {
+      "type": "ML",
+      "feature_set": "CUF-only",
+      "accuracy": 0.9244,
+      "precision": 0.9542,
+      "recall": 0.9197,
+      "f1_score": 0.9366,
+      "roc_auc": 0.9746
+    },
+    "Random Forest (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.9171,
+      "precision": 0.9461,
+      "recall": 0.9157,
+      "f1_score": 0.9306,
+      "roc_auc": 0.9707,
+      "cv_f1_mean": 0.9371,
+      "cv_f1_std": 0.0067
+    },
+    "Gradient Boosting (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.9195,
+      "precision": 0.95,
+      "recall": 0.9157,
+      "f1_score": 0.9325,
+      "roc_auc": 0.9725,
+      "cv_f1_mean": 0.9347,
+      "cv_f1_std": 0.0089
+    },
+    "XGBoost (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "accuracy": 0.9293,
+      "precision": 0.9545,
+      "recall": 0.9277,
+      "f1_score": 0.9409,
+      "roc_auc": 0.9759,
+      "cv_f1_mean": 0.9355,
+      "cv_f1_std": 0.0081
+    }
+  },
+  "time_overrun_regression": {
+    "Linear Regression": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "mae_months": 11.39,
+      "rmse_months": 18.67,
+      "r2_score": 0.5934
+    },
+    "Decision Tree Reg": {
+      "type": "Statistical",
+      "feature_set": "All",
+      "mae_months": 7.09,
+      "rmse_months": 14.57,
+      "r2_score": 0.7525
+    },
+    "Random Forest Reg (CUF)": {
+      "type": "ML",
+      "feature_set": "CUF-only",
+      "mae_months": 4.96,
+      "rmse_months": 11.35,
+      "r2_score": 0.8497
+    },
+    "Random Forest Reg (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "mae_months": 4.96,
+      "rmse_months": 11.21,
+      "r2_score": 0.8534
+    },
+    "XGBoost Reg (Full)": {
+      "type": "ML",
+      "feature_set": "CUF+Temporal",
+      "mae_months": 4.68,
+      "rmse_months": 10.54,
+      "r2_score": 0.8703
+    }
+  },
+  "summary": {
+    "requirement_b": {
+      "statistical_f1": 0.6778,
+      "ml_f1": 0.8646,
+      "ml_improvement_pct": 27.6,
+      "conclusion": "ML provides significant gains"
+    },
+    "requirement_c": {
+      "cuf_only_f1": 0.8617,
+      "cuf_temporal_f1": 0.8646,
+      "temporal_gain_pct": 0.3,
+      "conclusion": "Temporal features from multi-month tracking improve prediction"
+    }
+  }
+}

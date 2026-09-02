@@ -1,0 +1,17 @@
+# PAIMANA AI - Docker Compose
+# Run: docker compose up --build
+# Then open: http://localhost:8000
+
+services:
+  paimana-ai:
+    build: .
+    container_name: paimana-ai
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Mount ML models and results so they persist across rebuilds
+      - ./backend/ml/models:/app/backend/ml/models:ro
+      - ./backend/ml/results:/app/backend/ml/results:ro
+    restart: unless-stopped

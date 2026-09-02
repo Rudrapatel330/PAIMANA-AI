@@ -1,0 +1,5 @@
+# PAIMANA AI - Root Requirements
+# This file references the backend requirements for convenience.
+# Install: pip install -r requirements.txt
+
+-r backend/requirements.txt
